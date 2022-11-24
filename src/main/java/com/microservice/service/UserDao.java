@@ -3,6 +3,7 @@ package com.microservice.service;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,13 @@ private static int usersCount=0;
 	
 	public List<User> findAll(){
 		return usersList;
+	}
+	
+	public User findOne(int id) {
+	//using streams
+		Predicate<? super User> predicate = user -> user.getId().equals(id);
+//		return usersList.stream().filter(predicate).findFirst().get();	
+		return usersList.stream().filter(predicate).findFirst().orElse(null);
 	}
 	
 }

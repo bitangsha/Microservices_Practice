@@ -39,4 +39,9 @@ private static int usersCount=0;
 		return user;
 	}
 	
+	public void deleteById(int id) {
+		Predicate<? super User> predicate = user -> user.getId().equals(id);
+		usersList.removeIf(predicate);
+	}
+	
 }

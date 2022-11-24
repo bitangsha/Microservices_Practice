@@ -33,4 +33,10 @@ private static int usersCount=0;
 		return usersList.stream().filter(predicate).findFirst().orElse(null);
 	}
 	
+	public User save(User user) {
+		user.setId(++usersCount);
+		usersList.add(user);
+		return user;
+	}
+	
 }

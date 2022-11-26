@@ -25,7 +25,8 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- vvvvvvvvvvvvvv Add spring-boot-starter-validation and jakarta.validation-api to validate request by using @valid annotation vvvvvvvvvvvvvv-->
+			<!-- ================ Add spring-boot-starter-validation and jakarta.validation-api 
+		to validate request by using @valid annotation ===================== -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,16 +38,25 @@
 			<artifactId>jakarta.validation-api</artifactId>
 		</dependency>
 
-		<!-- ^^^^^^^^^^^^ Add spring-boot-starter-validation and jakarta.validation-api to validate request by using @valid annotation ^^^^^^^^^^^^^^^^-->
+		<!-- ================ Add spring-boot-starter-validation and jakarta.validation-api 
+		to validate request by using @valid annotation ===================== -->
 
 
-		<!-- vvvvvvvvvvvvvv Open api for swagger vvvvvvvvvvvvvvvvv-->
+		<!-- ==================== Open api for swagger =================== -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.6.13</version>
 		</dependency>
-		<!-- ^^^^^^^^^^^^^ Open api for swagger ^^^^^^^^^^^^^^^^^ -->
+		<!-- ====================== Open api for swagger ================== -->
+		
+		
+		<!-- ================== If you want xml format in stead of json ================== -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>			
+		</dependency>
+		<!-- ================== If you want xml format in stead of json ================== -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

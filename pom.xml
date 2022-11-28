@@ -25,7 +25,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-			<!-- ================ Add spring-boot-starter-validation and jakarta.validation-api 
+		<!-- ================ Add spring-boot-starter-validation and jakarta.validation-api 
 		to validate request by using @valid annotation ===================== -->
 
 		<dependency>
@@ -49,14 +49,21 @@
 			<version>1.6.13</version>
 		</dependency>
 		<!-- ====================== Open api for swagger ================== -->
-		
-		
+
+
 		<!-- ================== If you want xml format in stead of json ================== -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>			
+			<artifactId>jackson-dataformat-xml</artifactId>
 		</dependency>
 		<!-- ================== If you want xml format in stead of json ================== -->
+
+		<!-- ================== HATEOAS ================== -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+		<!-- ================== HATEOAS ================== -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

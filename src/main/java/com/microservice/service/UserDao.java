@@ -17,9 +17,9 @@ private static int usersCount=0;
 	private static List<User> usersList = new ArrayList<>();
 	
 	static {
-		usersList.add(new User(++usersCount, "Matthew", LocalDate.now().minusYears(30)));
-		usersList.add(new User(++usersCount, "Jon", LocalDate.now().minusYears(34)));
-		usersList.add(new User(++usersCount, "Lewis", LocalDate.now().minusYears(42)));
+		usersList.add(new User(++usersCount, "Matthew", LocalDate.now().minusYears(30), 987654));
+		usersList.add(new User(++usersCount, "Jon", LocalDate.now().minusYears(34), 673832));
+		usersList.add(new User(++usersCount, "Lewis", LocalDate.now().minusYears(42), 863621));
 	}
 	
 	public List<User> findAll(){
